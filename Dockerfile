@@ -14,6 +14,7 @@ RUN apt-get update \
  curl nano python3-pip gettext chrpath libssl-dev libxft-dev \
  libfreetype6 libfreetype6-dev  libfontconfig1 libfontconfig1-dev \
   && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /code/
 COPY requirements.txt /code/
 RUN pip install wheel
